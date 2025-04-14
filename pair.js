@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_techboy_Tech = Techboy Tech({
+            let Pair_Code_By_techboy_Tech = Techboy_Tech({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -80,7 +80,7 @@ _Don't Forget To Give Star To My Repo_`
  
 
         await delay(100);
-        await Pair_Code_By_Gifted_Tech.ws.close();
+        await Pair_Code_By_Techboy_Tech.ws.close();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
